@@ -2,6 +2,7 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXMasonryPane?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
@@ -11,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<StackPane fx:id="pane" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane fx:id="pane" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="604.0" prefWidth="461.0">
          <top>
@@ -27,11 +28,6 @@
                               <Font size="22.0" />
                            </font>
                         </Label>
-                        <JFXButton fx:id="sync" alignment="BASELINE_RIGHT" buttonType="RAISED" opacity="0.91" ripplerFill="WHITE">
-                           <HBox.margin>
-                              <Insets top="10.0" />
-                           </HBox.margin>
-                        </JFXButton>
                      </children>
                   </HBox>
                </children>
@@ -55,6 +51,18 @@
                         <Insets top="20.0" />
                      </VBox.margin>
                   </JFXButton>
+                  <JFXMasonryPane prefHeight="200.0" prefWidth="200.0">
+                    <children>
+                      <Label>Lesson 1</Label>
+                      <Label>Lesson 2</Label>
+                      <Label>Lesson 3</Label>
+                      <Label>Lesson 4</Label>
+                      <Label>Lesson 5</Label>
+                      <Label>Lesson 6</Label>
+                      <Label>Lesson 7</Label>
+                      <Label>Lesson 8</Label>
+                    </children>
+                  </JFXMasonryPane>
                   <Label fx:id="error" prefHeight="16.0" prefWidth="445.0" textFill="#f50202" />
                </children>
                <BorderPane.margin>
@@ -62,9 +70,6 @@
                </BorderPane.margin>
             </VBox>
          </center>
-         <bottom>
-            <Label fx:id="autoFill" prefHeight="36.0" prefWidth="458.0" text="Label" BorderPane.alignment="CENTER" />
-         </bottom>
       </BorderPane>
    </children>
 </StackPane>
