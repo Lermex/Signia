@@ -1,3 +1,5 @@
+package uk.ac.uel.signia;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -8,7 +10,7 @@ public class Signia extends Application {
 
   @Override
   public void start(Stage primaryStage) throws Exception {
-    Parent root = FXMLLoader.load(Signia.class.getResource("main.fxml"));
+    Parent root = FXMLLoader.load(Signia.class.getResource("/main.fxml"));
     primaryStage.setTitle("Signia");
     Scene scene = new Scene(root);
 //    scene.getStylesheets().add(Signia.class.getResource("styles.css").toExternalForm());
