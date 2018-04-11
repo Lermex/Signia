@@ -3,14 +3,17 @@ version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
 
-sourceCompatibility = 1.9
+sourceCompatibility = 1.8
 
 repositories {
+    jcenter()
     mavenCentral()
 }
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
-    compile 'com.jfoenix:jfoenix:9.0.3'
+    compile 'com.jfoenix:jfoenix:8.0.3'
+    compile 'de.jensd:fontawesomefx-fontawesome:4.7.0-5'
     compile 'org.tensorflow:tensorflow:1.4.0'
+    compile files('lib/opencv-340.jar')
 }
