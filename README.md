@@ -4,6 +4,8 @@ through his PC camera. The general teaching style is inspired by [Duolingo](duol
 
 This is a programming demo project created for [UEL](uel.ac.uk).
 
+![Screenshot](https://user-images.githubusercontent.com/895159/38692054-95bf9ef0-3e7a-11e8-84db-6392162c74b9.jpeg)
+
 ## Technologies
 We combine JavaFX and JFoenix for the UI with OpenCV for direct camera access and TensorFlow running Google's ImageNet
 neural network for image recognition.
