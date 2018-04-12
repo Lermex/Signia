@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+<VBox fx:id="pane" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="uk.ac.uel.signia.ui.LessonListController">
+        <HBox alignment="CENTER">
+            <padding>
+                <Insets bottom="10.0" />
+            </padding>
+            <Text>
+                Choose a lesson:
+            </Text>
+        </HBox>
+        <JFXListView>
+            <JFXListView fx:id="alphabetLessons" styleClass="sublist">
+                <groupnode>
+                    <Label styleClass="sub-label">The Alphabet</Label>
+                </groupnode>
+                <Label id="lesson1">A and B</Label>
+                <Label disable="true">C and D</Label>
+                <Label disable="true">E and F</Label>
+                <Label disable="true">Review: A through F</Label>
+            </JFXListView>
+            <JFXListView fx:id="greetingLessons" styleClass="sublist">
+                <groupnode>
+                    <Label styleClass="sub-label">Basic Greetings</Label>
+                </groupnode>
+                <Label disable="true">Greeting a Friend</Label>
+                <Label disable="true">Saying Bye</Label>
+            </JFXListView>
+            <JFXListView fx:id="familyLessons" styleClass="sublist">
+                <groupnode>
+                    <Label styleClass="sub-label">Friends and Family</Label>
+                </groupnode>
+                <Label disable="true">My Family</Label>
+                <Label disable="true">My Friends</Label>
+            </JFXListView>
+        </JFXListView>
+</VBox>

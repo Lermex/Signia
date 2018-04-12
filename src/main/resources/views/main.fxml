@@ -12,64 +12,39 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<StackPane fx:id="pane" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="604.0" prefWidth="461.0">
-         <top>
-            <VBox style="-fx-background-color: #9D7052;" BorderPane.alignment="CENTER">
-               <children>
-                  <HBox spacing="130.0">
-                     <children>
-                        <Label text="Signia" textAlignment="CENTER" textFill="WHITE">
-                           <padding>
-                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-                           </padding>
-                           <font>
-                              <Font size="22.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-               </children>
+<StackPane fx:id="pane" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="uk.ac.uel.signia.ui.MainViewController">
+    <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="604.0"
+                prefWidth="800.0">
+        <top>
+            <VBox BorderPane.alignment="CENTER">
+                <HBox spacing="130.0" style="-fx-background-color: #9D7052;">
+                    <Label text="Signia" textAlignment="CENTER" textFill="WHITE">
+                        <padding>
+                            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+                        </padding>
+                        <font>
+                            <Font size="22.0"/>
+                        </font>
+                    </Label>
+                </HBox>
+                <BorderPane>
+                    <padding>
+                        <Insets bottom="20.0" left="5.0" right="5.0" top="20.0"/>
+                    </padding>
+                    <left>
+                        <JFXButton style="-fx-background-color: #57a9a9" textFill="white">Back to Lessons</JFXButton>
+                    </left>
+                    <right>
+                        <JFXButton style="-fx-background-color: #57a9a9" textFill="white">Options</JFXButton>
+                    </right>
+                </BorderPane>
             </VBox>
-         </top>
-         <center>
-            <VBox spacing="30.0" BorderPane.alignment="CENTER">
-               <children>
-                  <JFXTextField fx:id="inputField" focusColor="#9d7052" labelFloat="true" prefHeight="31.0" prefWidth="441.0" promptText="Enter Amount" unFocusColor="#9d7052">
-                     <VBox.margin>
-                        <Insets top="30.0" />
-                     </VBox.margin>
-                  </JFXTextField>
-                  <JFXComboBox fx:id="from" focusColor="#9d7052" prefHeight="26.0" prefWidth="442.0" promptText="From Country" unFocusColor="#9d7052" />
-                  <JFXComboBox fx:id="to" focusColor="#9d7052" prefHeight="26.0" prefWidth="440.0" promptText="To Country" unFocusColor="#9d7052" />
-                  <JFXButton fx:id="convertBtn" buttonType="RAISED" prefHeight="45.0" prefWidth="112.0" style="-fx-background-color: #9D7052;" text="CONVERT" textFill="WHITE">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
-                     <VBox.margin>
-                        <Insets top="20.0" />
-                     </VBox.margin>
-                  </JFXButton>
-                  <JFXMasonryPane prefHeight="200.0" prefWidth="200.0">
-                    <children>
-                      <Label>Lesson 1</Label>
-                      <Label>Lesson 2</Label>
-                      <Label>Lesson 3</Label>
-                      <Label>Lesson 4</Label>
-                      <Label>Lesson 5</Label>
-                      <Label>Lesson 6</Label>
-                      <Label>Lesson 7</Label>
-                      <Label>Lesson 8</Label>
-                    </children>
-                  </JFXMasonryPane>
-                  <Label fx:id="error" prefHeight="16.0" prefWidth="445.0" textFill="#f50202" />
-               </children>
-               <BorderPane.margin>
-                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
-               </BorderPane.margin>
+        </top>
+        <center>
+            <VBox spacing="30.0" BorderPane.alignment="CENTER" fx:id="center">
+                <Label>main content</Label>
             </VBox>
-         </center>
-      </BorderPane>
-   </children>
+        </center>
+    </BorderPane>
 </StackPane>

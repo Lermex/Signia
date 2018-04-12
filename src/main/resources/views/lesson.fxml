@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.BorderPane?>
 
-<StackPane fx:id="pane" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
-</StackPane>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane prefHeight="9000" fx:id="pane" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="uk.ac.uel.signia.ui.LessonController">
+    <padding>
+        <Insets top="30.0" />
+    </padding>
+    <center>
+        <VBox alignment="TOP_CENTER" spacing="5">
+            <Text style="-fx-font-weight: bold; -fx-font-size: 18px;">Letter "A"</Text>
+            <Label>Try to match the reference image with your hands. Our AI will recognize when you're showing the right sign.</Label>
+            <Label>Remember that the reference is shown from your point of view while the camera sees you from the front :)</Label>
+            <VBox prefHeight="50" />
+            <HBox alignment="CENTER" spacing="50">
+                <ImageView fx:id="referenceGesture" layoutX="29.0" layoutY="44.0" fitHeight="224.0" fitWidth="400.0"
+                           pickOnBounds="true" preserveRatio="true">
+                    <Image url="references/bsl-a.png"/>
+                </ImageView>
+                <ImageView fx:id="cameraView" layoutX="29.0"
+                           layoutY="44.0" fitHeight="224.0"
+                           fitWidth="400.0"
+                           pickOnBounds="true" preserveRatio="true">
+                    <Image url="references/black.png"/>
+                </ImageView>
+            </HBox>
+            <VBox prefHeight="50" />
+            <Text fx:id="recognitionText" style="-fx-font-weight: bold; -fx-font-size: 12px;" />
+        </VBox>
+    </center>
+</BorderPane>
