@@ -1,8 +1,8 @@
 # Signia
 Signia is an interactive system for learning sign languages that uses Machine Learning to recognize the user's signs
-through his PC camera. The general teaching style is inspired by [Duolingo](duolingo.com)
+through his PC camera. The general teaching style is inspired by [Duolingo](http://www.duolingo.com)
 
-This is a programming demo project created for [UEL](uel.ac.uk).
+This is a programming demo project created for [UEL](http://uel.ac.uk).
 
 ![Screenshot](https://user-images.githubusercontent.com/895159/38692054-95bf9ef0-3e7a-11e8-84db-6392162c74b9.jpeg)
 
