@@ -33,10 +33,10 @@
                         <Insets bottom="20.0" left="5.0" right="5.0" top="20.0"/>
                     </padding>
                     <left>
-                        <JFXButton style="-fx-background-color: #57a9a9" textFill="white">Back to Lessons</JFXButton>
+                        <JFXButton style="-fx-background-color: #57a9a9" textFill="white" onAction="#swtichToLessonList">Back to Lessons</JFXButton>
                     </left>
                     <right>
-                        <JFXButton style="-fx-background-color: #57a9a9" textFill="white">Options</JFXButton>
+                        <JFXButton style="-fx-background-color: #57a9a9" textFill="white" onAction="#switchToOptions">Options</JFXButton>
                     </right>
                 </BorderPane>
             </VBox>

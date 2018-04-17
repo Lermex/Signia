@@ -14,16 +14,28 @@ public class MainViewController {
 
     @FXML
     public void initialize() {
-        try {
-            loadFxml("lessonList");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        swtichToLessonList();
     }
 
     public void switchToLesson(int lessonId) {
         try {
             loadFxml("lesson");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void switchToOptions() {
+        try {
+            loadFxml("options");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void swtichToLessonList() {
+        try {
+            loadFxml("lessonList");
         } catch (IOException e) {
             e.printStackTrace();
         }
